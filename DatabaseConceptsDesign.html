@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Database Concepts and Design</title>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+  </head>
+  <body>
+    <h1>Database Conepts and Design</h1>
+    <hr color="black" />
+    <img src="SQLLogo.png" alt="Java Logo" id="SQLLogo" float />
+    <!--Section #1-->
+    <h2>Week 1</h2>
+    <h4><u>Materials Learned</u></h4>
+    <ul>
+      <li>Data vs Information</li>
+      <li>History of the Database</li>
+      <li>Major Transformations in Computing</li>
+    </ul>
+    <p>
+      Oracle SQL is a programming language used for managing and manipulating
+      data in Oracle databases. It provides a variety of commands and statements
+      for creating, querying, and modifying the database and its data. The
+      design of a database using Oracle SQL involves several key steps,
+      including identifying the data to be stored, defining the structure of the
+      data, and implementing the database using SQL commands. Proper design of a
+      database is crucial for ensuring that the data can be efficiently accessed
+      and managed, and that it is organized in a way that supports the needs and
+      requirements of the application or system that will use the database.
+    </p>
+    <!--Section #2-->
+    <h2>Week 2</h2>
+    <h4><u>Materials Learned</u></h4>
+    <ul>
+      <li>Conceptual and Physical Model</li>
+      <li>Entites Instances and Attriubutes</li>
+      <li>Entity Relationship Model (ERD)</li>
+      <li>ERDish and Drawing Relationships</li>
+    </ul>
+    <p>
+      The difference between conceptual and physical models in Oracle database
+      design is that a conceptual model is a high-level representation of the
+      data and its relationships, while a physical model is a detailed,
+      implementation-specific representation of the database. In database
+      design, the difference between an entity instance and an attribute is that
+      an entity instance is a specific occurrence or instance of an entity,
+      while an attribute is a characteristic or property of an entity. Speaking
+      ERDish in database design refers to using the terminology and notation of
+      entity-relationship diagrams (ERDs) to communicate and describe the design
+      of a database.
+    </p>
+    <!--Section #3-->
+    <h2>Week 3</h2>
+    <h4><u>Materials Learned</u></h4>
+    <ul>
+      <li>Identifying Relationship.</li>
+      <li>Relationship Types</li>
+      <li>Resolving Many to Many Relationship</li>
+    </ul>
+    <p>
+      There are several types of relationships that can exist in a database,
+      including one-to-one, one-to-many, many-to-one, and many-to-many
+      relationships. A one-to-one relationship is a relationship between two
+      entities where each entity is associated with only one instance of the
+      other entity. For example, a person entity could have a one-to-one
+      relationship with a passport entity, where each person is associated with
+      only one passport and each passport is associated with only one person. A
+      one-to-many relationship is a relationship between two entities where each
+      instance of the first entity is associated with one or more instances of
+      the second entity, but each instance of the second entity is associated
+      with only one instance of the first entity. For example, a customer entity
+      could have a one-to-many relationship with an order entity, where each
+      customer is associated with one or more orders, but each order is
+      associated with only one customer. A many-to-one relationship is similar
+      to a one-to-many relationship, but it is the reverse direction. In a
+      many-to-one relationship, each instance of the first entity is associated
+      with only one instance of the second entity, but each instance of the
+      second entity is associated with one.
+    </p>
+    <!--Section #4-->
+    <h2>Week 4</h2>
+    <h4><u>Materials Learned</u></h4>
+    <ul>
+      <li>Supertypes and Subtypes</li>
+      <li>Documenting Business Rules</li>
+      <li>UIDs</li>
+    </ul>
+    <p>
+      In database design, supertypes and subtypes are used to represent
+      hierarchical relationships between entities. A supertype is a high-level
+      entity that represents a general category or group of entities, while a
+      subtype is a more specific entity that belongs to a particular category or
+      group represented by the supertype. Business rules are used in database
+      design to define the constraints, conditions, and requirements that must
+      be satisfied by the data in a database. Documenting business rules in
+      database design involves capturing and recording these constraints,
+      conditions, and requirements in a clear and concise manner, so that they
+      can be used to guide the design and implementation of the database. A UID,
+      or a unique identifier, is a field in a database that is used to uniquely
+      identify each record or entity in the database. A UID is typically a
+      primary key field, which means that it is a field that has a unique value
+      for each record in the database and is used to identify and distinguish
+      each record from the others.
+    </p>
+    <nav>
+      <br />
+      <a href="AlgorithmsAndProblemSolving.html">
+        Algorithms and Problem Solving
+      </a>
+      <br />
+      <a href="FundamentalsNumericComputing.html">
+        Fundamentals Numeric Comp
+      </a>
+      <br />
+      <a href="OperatingSystems.html">Operating Systems</a>
+    </nav>
+    <script>
+      function scrollToTop() {
+        var currentScroll =
+          document.documentElement.scrollTop || document.body.scrollTop;
+        if (currentScroll > 0) {
+          window.requestAnimationFrame(scrollToTop);
+          window.scrollTo(0, currentScroll - currentScroll / 5);
+        }
+      }
+    </script>
+    <button class="scrollToTop" onclick="scrollToTop()">Scroll to Top</button>
+  </body>
+</html>

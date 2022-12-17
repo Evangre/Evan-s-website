@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Operating Systems</title>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+  </head>
+  <body>
+    <img src="LinuxLogo.png" alt="Linux Logo" id="javaLogo" float />
+    <h1>Operating Systems</h1>
+    <hr color="black" />
+    <!--Section #1-->
+    <h2>Week 1</h2>
+    <h4><u>Materials Learned</u></h4>
+    <ul>
+      <li>Introduction to Operating Systems</li>
+      <li>General Format of Unix Commands</li>
+      <li>Paths and Path Names</li>
+    </ul>
+    <p id="p1">
+      An operating system (OS) is the main software that manages all the other
+      programs and processes on a computer. It provides a platform for running
+      applications and managing system resources, such as memory, storage, and
+      processing power. In short, an operating system is the central nervous
+      system of a computer, controlling and coordinating the various parts of
+      the system to ensure that everything runs smoothly.A command is the basic
+      instruction that tells the operating system to do something, such as run a
+      program or copy a file. Options are additional settings that can be used
+      to modify the behavior of the command. For example, the -l option can be
+      used with the ls command to show more detailed information about the files
+      and directories in a directory. Arguments are the input that the command
+      operates on, such as the name of a file or directory. n Unix and Unix-like
+      operating systems, a path is a string of characters that specifies the
+      location of a file or directory in the file system. A path can be either
+      absolute or relative.
+    </p>
+    <!--Section #2-->
+    <h2>Week 2</h2>
+    <h4><u>Materials Learned</u></h4>
+    <ul>
+      <li>Navigating the File System</li>
+      <li>Listing Directory Contents</li>
+      <li>Unix/ Linux File Types</li>
+    </ul>
+    <p id="p2">
+      To navigate the file system in Unix, you can use the cd command to change
+      your current working directory. For example, to navigate to the
+      /home/user/documents directory, you would use the following command: cd
+      /home/user/documents. To list the contents of a directory in Unix, use the
+      ls command. For example, to list the contents of the current directory,
+      you can use the following command: ls. In Unix-like operating systems,
+      files are grouped into different types based on their function and
+      content. Some common file types in Unix include: Regular files: These are
+      regular files that contain data or other information. They can be text
+      files, image files, executables, or any other type of file. Directories:
+      These are special files that contain a list of other files and
+      directories. Directories are used to organize files in a hierarchical
+      structure. Symbolic links: These are special files that point to another
+      file or directory. Symbolic links are often used to create aliases or
+      shortcuts to other files or directories.
+    </p>
+    <!--Section #3-->
+    <h2>Week 3</h2>
+    <h4><u>Materials Learned</u></h4>
+    <ul>
+      <li>File and directory permission</li>
+      <li>Using the VI Editor.</li>
+      <li>Editing a File With the VI Editor</li>
+    </ul>
+    <p id="p3">
+      n Unix-like operating systems, file permissions determine who can access
+      and modify a file. File permissions are specified by a set of characters
+      that are associated with each file and directory. These characters
+      indicate which operations are allowed for each user or group of users.
+      There are three classes of users that can be associated with file
+      permissions: the owner of the file, the members of the file's group, and
+      all other users. For each of these classes, there are three permissions
+      that can be specified: read, write, and execute. o access the vi editor in
+      Unix, you can open a terminal and run the vi command followed by the name
+      of the file you want to edit. For example, to open a file called file.txt
+      in the vi editor, you can run the following command: vi file.txt
+    </p>
+    <!--Section #4-->
+    <h2>Week 4</h2>
+    <h4><u>Materials Learned</u></h4>
+    <ul>
+      <li>Introduction to Shell Scrips</li>
+      <li>Shell Logic Structure</li>
+    </ul>
+    <p id="p4">
+      A shell script is a text file that contains a sequence of commands for a
+      Unix-like operating system. Shell scripts are typically used to automate
+      tasks that are performed frequently or repetitively, such as backups,
+      installations, or data processing. A shell script is a text file that
+      contains a sequence of commands for a Unix-like operating system. The
+      structure of a shell script typically consists of the following elements:
+      Shebang line, Comments, Variables, and Control Structures
+    </p>
+    <!--Nav Block-->
+    <nav>
+      <a href="DatabaseConceptsDesign.html"> Database Concepts and Design </a>
+      <br />
+      <a href="FundamentalsNumericComputing.html">
+        Fundamentals Numeric Comp
+      </a>
+      <br />
+      <a href="AlgorithmsAndProblemSolving.html"
+        >Algorithms and Problem Solving</a
+      >
+    </nav>
+    <script>
+      function scrollToTop() {
+        var currentScroll =
+          document.documentElement.scrollTop || document.body.scrollTop;
+        if (currentScroll > 0) {
+          window.requestAnimationFrame(scrollToTop);
+          window.scrollTo(0, currentScroll - currentScroll / 5);
+        }
+      }
+    </script>
+    <button class="scrollToTop" onclick="scrollToTop()">Scroll to Top</button>
+  </body>
+</html>
